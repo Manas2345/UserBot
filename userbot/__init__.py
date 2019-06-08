@@ -38,19 +38,19 @@ if version_info[0] < 3 or version_info[1] < 6:
     LOGS.error(
         "You MUST have a python version of at least 3.6."
         " Multiple features depend on this. Bot quitting."
-    )
+
     quit(1)
 
 # Check if the config was edited by using the already used variable
-CONFIG_CHECK = os.environ.get("___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+CONFIG_CHECK = os.environ.get("") 
 
 if CONFIG_CHECK:
     LOGS.error("Please remove the line mentioned in the first hashtag from the config.env file")
     quit(1)
 
-API_KEY = os.environ.get("API_KEY", None)
+API_KEY = os.environ.get("API_KEY", "694429") 
 
-API_HASH = os.environ.get("API_HASH", None)
+API_HASH = os.environ.get("API_HASH", "7e4ee90b9fae5835291071bac50961f6") 
 
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
